@@ -1,0 +1,90 @@
+/** {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+*/
+body {
+/*	background-color: grey;
+*/	margin: 0;
+	padding: 0px 60px;
+	font-family: 'Kreon', serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 20px 0px;
+	margin: 0px 20px;	
+	display: inline-block;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.5);
+	padding: 0;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.navbar a {
+  display: block;
+  color: #777;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #fdfcfc;
+}
+
+.circular {
+	border-radius: 50%;
+	height: 200px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.content {
+	text-align: center;
+	margin: 50px auto;
+	width: 100%;
+	max-width: 960px;
+	height: auto;
+	border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  background: #eee;
+  padding: .5em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+.box {
+	display: block;  
+	background: lightblue;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#skills {
+	height: 140px;
+	width: 1px;
+	opacity: 0;
+	transition: all .90s ease;
+}
+
+#skills.show {
+	opacity: 1;
+	height: 300px;
+	width: 960px;
+}
