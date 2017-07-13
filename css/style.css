@@ -1,16 +1,18 @@
 /** {
 	border: 1px solid rgba(0, 0, 0, 0.3);
-}
-*/
+}*/
 
 body {
-/*	background-color: grey;
-*/	margin: 0;
+	margin: 0;
 	padding: 0px 60px;
 	font-family: 'Kreon', serif;
 	font-size: 20px;
 	letter-spacing: 1px;
 	text-align: center;
+}
+
+h1 {
+	margin-top: 70px;
 }
 
 ul {
@@ -61,23 +63,23 @@ li {
 	border-radius: 5px;
 }
 
-a {
+/*a {
   text-decoration: none;
   background: #eee;
   padding: .5em;
   margin-bottom: 1em;
   display: inline-block;
-}
+}*/
 
 
-*,
+/**,
 *:before,
 *:after {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
+*/
 
 .cf:before,
 .cf:after {
@@ -89,12 +91,6 @@ a {
   clear: both;
 }
 
-.main-container {
-  background: #fff;
-  max-width: 960px;
-  margin: 25px auto 25px auto;
-  position: relative;
-}
 
 .container {
   position: relative;
@@ -107,8 +103,6 @@ a {
 	display: inline-block;
 }
 
-
-/*animation element*/
 
 .animation-element {
   opacity: 0;
@@ -185,8 +179,6 @@ a {
   margin: 0px 0px 5px 0px;
 }
 
-
-
  .mySlides {
  	display: none;
  	width: 100%;
@@ -196,28 +188,92 @@ a {
 	cursor:pointer
 }
 
-/*.w3-badge {
-	height:13px;
-	width:13px;
-	padding:0
-}*/
-
-
-
-.slider-container {
-	max-width: 960px;
-}
 
 .slider-container h3 {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
-.w3-center.w3-container.w3-section.w3-large.w3-text-white.w3-display-bottommiddle {
-	width: 100%;
-}
 
 .w3-content.w3-display-container.slider {
-	max-width: 500px;
+	height: 250px;
 }
 
 
+/*#content {       
+	width:auto;
+	text-align: justify;
+	padding: 10px;
+	border: 2px solid black;
+	border-top: none;
+	border-left: none;
+	z-index: 2;
+	display: table;
+}*/
+
+#meta h3{
+/*	display: table-cell;
+*/	text-align: center;
+	margin-top: 0px;
+}
+
+#meta p {
+	font-weight: normal;
+}
+
+#issuecodes h3{
+	text-align: center;
+	margin-top: 0px;
+}
+
+#issuecodes p {
+	font-weight: normal;
+}
+
+table {
+	margin:1em;
+	border-collapse: collapse;
+}
+
+th {
+	width: 450px;
+	height: 300px;
+	vertical-align: top;
+}
+
+td {
+	height: 300px;
+}
+
+td,th {
+	padding: 20px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+
+.fa {
+	padding: 15px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb6;
+	color: white;
+}
+
+.fa-github {
+	background: black;
+	color: white;
+}
