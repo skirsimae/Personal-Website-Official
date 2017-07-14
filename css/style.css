@@ -1,7 +1,7 @@
 /** {
 	border: 1px solid rgba(0, 0, 0, 0.3);
-}*/
-
+}
+*/
 html, body {
   	width: 100%;
 	font-family: 'Kreon', serif;
@@ -64,8 +64,8 @@ li {
 
 .anchor {
   display: block;
-  height: 50px; 
-  margin-top: -50px; 
+  height: 40px; 
+  margin-top: -40px; 
   visibility: hidden;
 }
 
@@ -78,7 +78,7 @@ li {
 }
 
 #about {
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
