@@ -18,7 +18,8 @@ h1 {
 }
 
 ul {
-	margin: 0;
+/*	height: 70px;
+*/	margin: 0;
 	padding: 0;
 }
 
@@ -76,7 +77,7 @@ li {
 	height: auto;
 }
 
-.aboutme {
+#about {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }

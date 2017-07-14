@@ -1,1 +1,261 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Website of Silva Kirsimae</title>
+	<table1 name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kreon:300" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<!-- NAV BAR -->
+	<div class="navbar">
+		<ul>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+	</div>
+	
+	<img class="circular" src="img/Linkedin.jpg"/>
+
+	<div class="content">
+
+		<span class="anchor" id="about"></span>
+			<div class="aboutme">
+				<h1>About me</h1>
+				<p>Hi there! Welcome to my personal website. My name is Silva Kirsimäe. I'm Estonian, living in the Netherlands for the past 3 years. I have a background in marketing but high interest in creating websites. This interest motivated me to pursue studies in web development and from April - July 2017, I followed an intensive coding bootcamp at the New York Code + Design Academy (NYCDA), Amsterdam which gave me a strong basis for both front -and backend web development skill-set. I am a certified full-stack web developer, pursuing to further strengthen my development skills in front-end.</p>
+			</div>
+
+	<!-- SKILLS -->
+		<span class="anchor" id="skills"></span>
+			<h1>Skills</h1>
+			<div class="container cf">
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					<img src="img/icons/html.png"/>
+					</div>
+					<div class="right">
+					<h4>HTML</h4>
+					</div>
+				  </div>
+				</div>
+				<div class="animation-element slide-left skill">
+				<div class="header">
+					<div class="left">
+						<img src="img/icons/css.png"/>
+						</div>
+						<div class="right">
+						<h4>CSS</h4>
+						</div>
+					</div>
+				</div>
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					  <img src="img/icons/js.png" />
+					</div>
+					<div class="right">
+					  <h4>JavaScript</h4>
+					</div>
+				  </div>
+				</div>
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					  <img src="img/icons/jQuery.png" />
+					</div>
+					<div class="right">
+					  <h4>jQuery</h4>
+					</div>
+				  </div>
+				</div>
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					  <img src="img/icons/ajax.jpg" />
+					</div>
+					<div class="right">
+					  <h4>AJAX</h4>
+					</div>
+				  </div>
+				</div>
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					  <img src="img/icons/nodejs.png" />
+					</div>
+					<div class="right">
+					  <h4>Nodejs</h4>
+					</div>
+				  </div>
+				</div>
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					  <img src="img/icons/postgresql.png" />
+					</div>
+					<div class="right">
+					  <h4>PostgreSQL</h4>
+					</div>
+				  </div>
+				</div>
+				<div class="animation-element slide-left skill">
+				  <div class="header">
+					<div class="left">
+					  <img src="img/icons/pug.png" />
+					</div>
+					<div class="right">
+					  <h4>Pug</h4>
+					</div>
+				  </div>
+				</div>
+			</div>
+
+
+	<!-- PROJECTS -->
+		<span class="anchor" id="projects"></span>
+<!-- 			<div class="section">
+ -->			<h1>Projects</h1>
+			<div id = "table1">
+				<table>
+					<thead>
+						<th><h3>Cycling Routes</h3>
+						<p>Final project of NYCDA coding bootcamp. Website that gives information about sightseeings and starting points of cycling routes in Apeldoorn, the Netherlands. The learning goal was to understand how to work with API-s. For this project, Under Armour and Google maps API-s were used.</p></th>
+
+						<th><h3>MemoryLoss</h3>
+						<p>Simple memory game for children between 6-9 years.This game tests your ability to memorize a set of objects on a picture in 10 seconds. After the time is up, you need to name the objects that you saw. The more you get right, the higher the score.</p></th>
+					</thead>
+
+					<tbody>
+						<tr>			
+							<td><div class="w3-content w3-display-container slider" id="div1">	
+							<img class="mySlides" src="img/cycling/main.png" style="width:100%">
+							<img class="mySlides" src="img/cycling/places.png" style="width:100%">
+							<img class="mySlides" src="img/cycling/places02.png" style="width:100%">
+							<img class="mySlides" src="img/cycling/routes.png" style="width:100%">
+							<a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
+							<a class="w3-btn-floating w3-display-right" onclick="plusDivs(this,1)">&#10095;</a></div></td>
+
+							<td><div class="w3-content w3-display-container slider" id="div2">
+							<img class="mySlides" src="img/memory/main.png" style="width:100%">
+							<img class="mySlides" src="img/memory/start.png" style="width:100%">
+							<img class="mySlides" src="img/memory/remember.png" style="width:100%">
+							<img class="mySlides" src="img/memory/questions.png" >
+							<img class="mySlides" src="img/memory/road.png" >
+							<a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
+							<a class="w3-btn-floating w3-display-right" onclick="plusDivs(this, 1)">&#10095;</a>
+							</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<div id='table2'>
+				<table>
+					<thead>
+						<th><h3>Blog Application</h3>
+						<p>Blogging application that allows users to register an account, login and logout.Once logged in, a user is able to create a post, view a list of their own posts, view a list of other user's posts and leave a comment on a post.The application has encryption that enables the user's passwords to be stored safely.</p></th>
+
+						<th><h3>SerenityBS</h3>
+						<p>Group assignment to create a business website for a (fictional) beauty salon, SerenityBS. Built on HTML, styling done with css and Bootstrap.</p></th>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td><div class="w3-content w3-display-container slider" id="div3">
+							<img class="mySlides" src="img/blog/homepage.png">
+							<img class="mySlides" src="img/blog/login.png">
+							<img class="mySlides" src="img/blog/profile.png">
+							<img class="mySlides" src="img/blog/create.png">
+							<img class="mySlides" src="img/blog/myposts.png">
+							<img class="mySlides" src="img/blog/allposts.png">
+							<a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
+							<a class="w3-btn-floating w3-display-right" onclick="plusDivs(this, 1)">&#10095;</a>
+							</div></td>
+
+							<td><div class="w3-content w3-display-container slider" id="div4">
+							<img class="mySlides" src="img/serenity/main.png">
+							<img class="mySlides" src="img/serenity/about.png">
+							<img class="mySlides" src="img/serenity/products.png">
+							<img class="mySlides" src="img/serenity/contact.png">
+							<a class="w3-btn-floating w3-display-left" onclick="plusDivs(this, -1)">&#10094;</a>
+							<a class="w3-btn-floating w3-display-right" onclick="plusDivs(this, 1)">&#10095;</a>
+							</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+<!-- 		</div>
+ -->
+	<script> 
+	var sliderObjects = [];
+	createSliderObjects();
+
+	function plusDivs(obj, n) {
+		var parentDiv = $(obj).parent();
+		var matchedDiv;
+
+		$.each(sliderObjects, function(i, item) {
+			if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+				matchedDiv = item;
+				return false;
+			}
+		});
+
+		matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+		showDivs(matchedDiv, matchedDiv.slideIndex);
+	}
+
+	function createSliderObjects() {
+		var sliderDivs = $('.slider');
+
+		$.each(sliderDivs, function(i, item) {
+			var obj = {};
+			obj.id = $(item).attr('id');
+			obj.divContent = item;
+			obj.slideIndex = 1;
+			obj.slideContents = $(item).find('.mySlides');
+			showDivs(obj, 1);
+			sliderObjects.push(obj);
+		});
+	}
+
+	function showDivs(divObject, n) {
+		debugger;
+		var i;
+		if (n > divObject.slideContents.length) {
+			divObject.slideIndex = 1
+		}
+		if (n < 1) {
+			divObject.slideIndex = divObject.slideContents.length
+		}
+		for (i = 0; i < divObject.slideContents.length; i++) {
+			divObject.slideContents[i].style.display = "none";
+		}
+		
+		divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+	}
+	</script>
+		
+		<span class="anchor" id="contact"></span>
+		<div class="contact">
+			<h1>Contact</h1>
+			<p> Get more information about me on Facebook and LinkedIn. <br>Take a look at the code of my projects on Github.
+			<br>
+			<br>
+			<a href="https://www.facebook.com/silva.kirsimae" target = "blank" class="fa fa-facebook"></a>
+			<a href="https://www.linkedin.com/in/silvakirsimae" target = "blank" class="fa fa-linkedin"></a>
+			<a href="https://github.com/skirsimae" target = "blank" class="fa fa-github"></a>
+		</div> 
+
+	</div>
+</body>
+</html>
