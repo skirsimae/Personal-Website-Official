@@ -30,8 +30,8 @@ li {
 }
 
 .navbar {
-	overflow: hidden;
-	background-color: #edece8;
+/*	overflow: hidden;
+*/	background-color: #edece8;
 	width: 100%;
 	position: fixed;
 	z-index:1;
@@ -51,9 +51,9 @@ li {
   background-color: #fdfcfc;
 }
 
-.active {
+/*.active {
     background-color: #fdfcfc;
-}
+}*/
 
 .circular {
 	border-radius: 50%;
@@ -247,11 +247,11 @@ td,th {
 	width: 450px;
 }
 
-.contact {
+.more {
 	margin-bottom: 250px;
 }
 
-.contact p {
+.more p {
 	margin-top: 50px;
 }
 

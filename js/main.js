@@ -21,10 +21,12 @@ $(document).ready(function(){
 			});
 		} 
 	});
+});
 
 
 	// --SKILLS ANIMATION ON SCROLL--
 
+$(document).ready(function(){
 	//window and animation items
 	var animation_elements = $.find('.animation-element');
 	var web_window = $(window);
@@ -62,6 +64,8 @@ $(document).ready(function(){
 	$(window).trigger('scroll');
 
 });
+
+
 
 
 
