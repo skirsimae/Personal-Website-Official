@@ -29,7 +29,7 @@ li {
 	display: inline-block;
 }
 
-.navbar {
+nav {
 /*	overflow: hidden;
 */	background-color: #edece8;
 	width: 100%;
@@ -38,7 +38,7 @@ li {
 	top: 0;
 }
 
-.navbar a {
+nav a {
 	display: block;
 	color: #777;
 	text-align: center;
@@ -47,15 +47,11 @@ li {
 	font-size: 20px;
 }
 
-.navbar a:hover:not(.active) {
+nav a:hover:not(.active) {
   background-color: #fdfcfc;
 }
 
-/*.active {
-    background-color: #fdfcfc;
-}*/
-
-.circular {
+#circular {
 	border-radius: 50%;
 	height: 250px;
 	margin-top: 130px;
@@ -69,7 +65,7 @@ li {
   visibility: hidden;
 }
 
-.content {
+#content {
 	text-align: center;
 	margin: 20px auto;
 	width: 100%;
@@ -110,11 +106,11 @@ li {
   clear: both;
 }
 
-.container {
+/*.container {
 	margin-top: 30px;
 	position: relative;
 	padding: 25px;
-}
+}*/
 
 .container.cf {
 	max-width: 600px;
