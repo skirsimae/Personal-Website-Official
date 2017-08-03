@@ -295,4 +295,20 @@ footer {
 		width: 60%;
 		float: none;
 	}
+	nav, nav li {
+		display: block;
+		width: 100%;
+	}
+	#circular {
+		border-radius: 50%;
+		height: 200px;
+		margin-top: 280px;
+		margin-bottom: 0px;
+	}
+	.anchor {
+		display: block;
+		height: 200px; 
+		margin-top: -200px; 
+		visibility: hidden;
+	}
 }
