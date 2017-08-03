@@ -10,13 +10,11 @@
 	<link href="https://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Kreon:300" rel="stylesheet">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
-
 <body>
-
 <!-- NAVIGATION -->
 	<header>
 		<nav>
@@ -28,19 +26,16 @@
 			</ul>
 		</nav>
 	</header>
-
 <!-- PROFILE IMAGE -->
 	<div id="profile_img">
 		<img src="img/LinkedIn.jpg" id="circular">
 	</div>
-
 <!-- MAIN CONTENT -->
 	<div id="content">
 		<section id="about"><span class="anchor"></span>
 			<h1>About me</h1>
 			<p>Hi there! Welcome to my personal website. My name is Silva Kirsimäe. I'm Estonian, living in the Netherlands for the past 3 years. I have a background in marketing but high interest in creating websites. This interest motivated me to pursue studies in web development and from April - July 2017, I followed an intensive coding bootcamp at the New York Code + Design Academy (NYCDA), Amsterdam which gave me a strong basis for both front -and backend web development skill-set. I am a certified full-stack web developer, pursuing to further strengthen my development skills in front-end.</p>
 		</section>
-
 <!-- SKILLS -->
 		<section id="skills"><span class="anchor"></span>
 			<h1>Skills</h1>
@@ -127,14 +122,13 @@
 				</div>
 			</div>
 		</section>
-
-
 <!-- PROJECTS -->
 		<section id="projects"><span class="anchor"></span>
 			<h1>Projects</h1>
 			<!-- PROJECT 1 -->
 			<div class="description">
-				<h3>Cycling Routes</h3>
+				<h3>Cycling Routes</h3>	
+				<h5><a href="https://github.com/skirsimae/Cycling-Routes" target="blank"> &#8618; Github link </a>|<a href="http://37.139.24.179/" target="blank"> &#8618; Live link </a></h5>
 				<p>Final project of NYCDA coding bootcamp. Website that gives information about sightseeings and starting points of cycling routes in Apeldoorn, the Netherlands. The learning goal was to understand how to work with API-s. For this project, Under Armour and Google maps API-s were used.</p>
 			</div>
 			<div class="slides">
@@ -149,7 +143,8 @@
 			</div>
 			<!-- PROJECT 2 -->
 			<div class="description">
-				<h3>MemoryLoss</h3>
+				<h3>Memory Loss</h3>
+				<h5><a href="https://github.com/skirsimae/memoryGame" target="blank"> &#8618; Github link</a></h5>
 				<p>Simple memory game for children between 6-9 years.This game tests your ability to memorize a set of objects on a picture in 10 seconds. After the time is up, you need to name the objects that you saw. The more you get right, the higher the score.</p>
 			</div>
 			<div class="slides">	
@@ -166,6 +161,7 @@
 			<!-- PROJECT 3 -->
 			<div class="description">
 				<h3>Blog Application</h3>
+				<h5><a href="https://github.com/skirsimae/Blog-Application" target="blank"> &#8618; Github link </a></h5>
 				<p>Blogging application that allows users to register an account, login and logout.Once logged in, a user is able to create a post, view a list of their own posts, view a list of other user's posts and leave a comment on a post.The application has encryption that enables the user's passwords to be stored safely.</p>
 			</div>
 			<div class="slides">	
@@ -182,7 +178,8 @@
 			</div>
 			<!-- PROJECT 4 -->
 			<div class="description">
-				<h3>SerenityBS</h3>
+				<h3>Serenity BS</h3>
+				<h5><a href="https://github.com/skirsimae/SerenityBS" target="blank"> &#8618; Github link </a></h5>
 				<p>Group assignment to create a business website for a (fictional) beauty salon, SerenityBS. Built on HTML, styling done with css and Bootstrap.</p>
 			</div>
 			<div class="slides">
@@ -196,8 +193,6 @@
 				</div>
 			</div>
 		</section>
-		
-
 <!-- MORE SECTION -->
 		<section id="more"><span class="anchor"></span>
 			<h1>More</h1>
@@ -207,64 +202,58 @@
 			<a href="https://www.linkedin.com/in/silvakirsimae" target = "blank" class="fa fa-linkedin"></a>
 			<a href="https://github.com/skirsimae" target = "blank" class="fa fa-github"></a>
 		</section>
-
 	</div>
-
+<!-- FOOTER -->
 	<footer>
 		<p>Made by Silva Kirsimae, Copyright &copy; 2017</p>
 	</footer>
-
-
 <!-- GALLERY SHOW OF PROJECTS FUNCTIONALITY-->
 	<script> 
-	var sliderObjects = [];
-	createSliderObjects();
+		var sliderObjects = [];
+		createSliderObjects();
 
-	function plusDivs(obj, n) {
-		var parentDiv = $(obj).parent();
-		var matchedDiv;
+		function plusDivs(obj, n) {
+			var parentDiv = $(obj).parent();
+			var matchedDiv;
+			$.each(sliderObjects, function(i, item) {
+				if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+					matchedDiv = item;
+					return false;
+				}
+			});
+			matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+			showDivs(matchedDiv, matchedDiv.slideIndex);
+		}
 
-		$.each(sliderObjects, function(i, item) {
-			if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
-				matchedDiv = item;
-				return false;
+		function createSliderObjects() {
+			var sliderDivs = $('.slider');
+
+			$.each(sliderDivs, function(i, item) {
+				var obj = {};
+				obj.id = $(item).attr('id');
+				obj.divContent = item;
+				obj.slideIndex = 1;
+				obj.slideContents = $(item).find('.mySlides');
+				showDivs(obj, 1);
+				sliderObjects.push(obj);
+			});
+		}
+
+		function showDivs(divObject, n) {
+			debugger;
+			var i;
+
+			if (n > divObject.slideContents.length) {
+				divObject.slideIndex = 1
 			}
-		});
-
-		matchedDiv.slideIndex=matchedDiv.slideIndex+n;
-		showDivs(matchedDiv, matchedDiv.slideIndex);
-	}
-
-	function createSliderObjects() {
-		var sliderDivs = $('.slider');
-
-		$.each(sliderDivs, function(i, item) {
-			var obj = {};
-			obj.id = $(item).attr('id');
-			obj.divContent = item;
-			obj.slideIndex = 1;
-			obj.slideContents = $(item).find('.mySlides');
-			showDivs(obj, 1);
-			sliderObjects.push(obj);
-		});
-	}
-
-	function showDivs(divObject, n) {
-		debugger;
-		var i;
-		if (n > divObject.slideContents.length) {
-			divObject.slideIndex = 1
+			if (n < 1) {
+				divObject.slideIndex = divObject.slideContents.length
+			}
+			for (i = 0; i < divObject.slideContents.length; i++) {
+				divObject.slideContents[i].style.display = "none";
+			}
+			divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
 		}
-		if (n < 1) {
-			divObject.slideIndex = divObject.slideContents.length
-		}
-		for (i = 0; i < divObject.slideContents.length; i++) {
-			divObject.slideContents[i].style.display = "none";
-		}
-		
-		divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
-	}
 	</script>
-
 </body>
 </html>
